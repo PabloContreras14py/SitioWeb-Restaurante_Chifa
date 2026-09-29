@@ -1,0 +1,286 @@
+/* SECCIONES TITULOS */
+.sub-title {
+    color: var(--accent-gold);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.3rem;
+}
+
+/* HISTORIA */
+.history-section {
+    padding: 6rem 8%;
+    background: var(--card-bg);
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.history-text h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.history-text p {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.history-stats {
+    display: flex;
+    gap: 2rem;
+}
+
+.stat h3 {
+    color: var(--accent-gold);
+    font-size: 2rem;
+}
+
+.stat p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.history-image img {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+/* MENU SECTION */
+.menu-section {
+    padding: 6rem 8%;
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    background: var(--card-bg);
+    color: var(--text-light);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.7rem 1.4rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.category-btn.active, .category-btn:hover {
+    background: var(--accent-gold);
+    color: var(--bg-dark);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.menu-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-gold);
+}
+
+.menu-card-img {
+    position: relative;
+    height: 190px;
+}
+
+.menu-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tag-badge {
+    position: absolute;
+    top: 12px; left: 12px;
+    background: rgba(15, 15, 18, 0.85);
+    color: var(--accent-gold);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.menu-card-body {
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.menu-card-body h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-card-body p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 1.2rem;
+}
+
+.menu-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--accent-gold);
+}
+
+/* TESTIMONIOS */
+.testimonials-section {
+    padding: 5rem 8%;
+    background: rgba(245, 166, 35, 0.03);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.stars { color: var(--accent-gold); margin-bottom: 1rem; }
+
+/* RESERVAS */
+.reservation-section {
+    padding: 6rem 8%;
+}
+
+.reservation-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 3.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reservation-header { text-align: center; margin-bottom: 2.5rem; }
+.reservation-header h2 { font-family: 'Cinzel', serif; font-size: 2.2rem; }
+.reservation-header p { color: var(--text-muted); }
+
+#reservationForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.form-group input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+
+.form-group input:focus { border-color: var(--accent-gold); }
+.btn-full { grid-column: span 2; justify-content: center; }
+
+/* CONTACTO */
+.contact-section { padding: 6rem 8%; }
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.contact-item { margin-bottom: 1.2rem; display: flex; align-items: center; gap: 1rem; color: var(--text-muted); }
+.contact-item i { color: var(--accent-gold); font-size: 1.2rem; }
+
+.btn-whatsapp {
+    background: #25d366;
+    color: white;
+    padding: 0.9rem 1.8rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+/* DRAWER CARRITO */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0; right: 0;
+    width: 400px; height: 100%;
+    background: var(--card-bg);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.8);
+    z-index: 2000;
+    border-left: 1px solid var(--border-color);
+}
+
+.cart-content { height: 100%; display: flex; flex-direction: column; padding: 2rem; }
+.cart-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.close-btn { font-size: 2rem; cursor: pointer; color: var(--text-muted); }
+.cart-items-container { flex-grow: 1; overflow-y: auto; margin: 1.5rem 0; }
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.cart-footer { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; }
+.cart-total-row { display: flex; justify-content: space-between; font-size: 1.2rem; margin-bottom: 1.5rem; }
+.cart-total-row strong { color: var(--accent-gold); }

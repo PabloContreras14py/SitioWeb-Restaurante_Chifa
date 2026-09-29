@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chifa Los 3 Hermanos | Cañete</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-badge">3H</div>
+            <div class="logo-text">
+                <h2>LOS 3 HERMANOS</h2>
+                <span>CHIFA TRADICIONAL • CAÑETE</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#historia">Nuestra Historia</a></li>
+                <li><a href="#menu">Menú Digital</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto">Ubícanos</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="tel:015812345" class="phone-btn"><i class="fas fa-phone-alt"></i> (01) 581-2345</a>
+            <div class="cart-icon" id="cartBtn">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="wok-badge"><i class="fas fa-fire"></i> EL WOK MÁS CRUCIENTE DE SAN VICENTE DE CAÑETE</div>
+                <h1>LA AUTÉNTICA<br>TRADICIÓN DEL<br><span class="highlight">CHIFA CAÑETANO</span> EN TU MESA</h1>
+                <p>Sabor oriental legendario elaborado con los ingredientes más frescos del valle de Cañete. Fusión irresistible con sazón peruana que cautiva generaciones.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-primary"><i class="fas fa-utensils"></i> Ver Menú Digital</a>
+                    <a href="#reservas" class="btn-secondary"><i class="fas fa-calendar-alt"></i> Reservar Mesa</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>AÑOS DE SAZÓN</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>INSUMOS FRESCOS</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>4.9★</h3>
+                        <p>CAÑETE FAVORITO</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="hero-circle-img">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=800" alt="Chifa Salteado Wok">
+                </div>
+                <!-- TARJETA DELIVERY VELOZ -->
+                <div class="delivery-badge">
+                    <div class="delivery-icon"><i class="fas fa-motorcycle"></i></div>
+                    <div class="delivery-info">
+                        <strong>DELIVERY VELOZ</strong>
+                        <span>San Vicente y zonas cercanas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTRA HISTORIA -->
+    <section id="historia" class="history-section">
+        <div class="history-container">
+            <div class="history-text">
+                <span class="sub-title">TRADICIÓN & PASIÓN</span>
+                <h2>TRES HERMANOS, UN SOLO LEGADO GASTRONÓMICO</h2>
+                <p>Nacimos en el corazón de San Vicente de Cañete con la misión de fusionar el fuego ancestral del wok con los ingredientes más frescos de nuestros valles sureños.</p>
+                <div class="history-stats">
+                    <div class="stat"><h3>15+</h3><p>Años de Tradición</p></div>
+                    <div class="stat"><h3>50k+</h3><p>Chaufas Salteados</p></div>
+                    <div class="stat"><h3>100%</h3><p>Sabor Cañetano</p></div>
+                </div>
+            </div>
+            <div class="history-image">
+                <img src="https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?q=80&w=800" alt="Plato Chifa Tradicional">
+            </div>
+        </div>
+    </section>
+
+    <!-- MENÚ DIGITAL -->
+    <section id="menu" class="menu-section">
+        <div class="section-header">
+            <span class="sub-title">PLATILLOS ESTRELLA</span>
+            <h2>Menú Digital & Pedidos</h2>
+        </div>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="todos">Todos los Platos</button>
+            <button class="category-btn" data-category="chaufas">Arroces Chaufa</button>
+            <button class="category-btn" data-category="especiales">Especialidades Wok</button>
+            <button class="category-btn" data-category="sopas">Sopas & Wantanes</button>
+            <button class="category-btn" data-category="bebidas">Bebidas & Refrescos</button>
+        </div>
+        <div class="menu-grid" id="menuGrid"></div>
+    </section>
+
+    <!-- RESERVAS -->
+    <section id="reservas" class="reservation-section">
+        <div class="reservation-card">
+            <div class="reservation-header">
+                <h2>Reserva tu Mesa Especial</h2>
+                <p>Asegura tu lugar para almuerzos familiares, cumpleaños o reuniones de negocios.</p>
+            </div>
+            <form id="reservationForm">
+                <div class="form-group"><input type="text" placeholder="Nombre completo" required></div>
+                <div class="form-group"><input type="tel" placeholder="Teléfono de contacto" required></div>
+                <div class="form-group"><input type="date" required></div>
+                <div class="form-group"><input type="time" required></div>
+                <div class="form-group"><input type="number" placeholder="Personas (1 a 20)" min="1" max="20" required></div>
+                <button type="submit" class="btn-primary btn-full"><i class="fas fa-check-circle"></i> Confirmar Reserva</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACTO & MAPA -->
+    <section id="contacto" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <span class="sub-title">UBICACIÓN Y ATENCIÓN</span>
+                <h2>Visítanos en San Vicente de Cañete</h2>
+                <p class="contact-item"><i class="fas fa-map-marker-alt"></i> Av. Mariscal Benavides 450, San Vicente de Cañete</p>
+                <p class="contact-item"><i class="fas fa-phone-alt"></i> (01) 581-2345 / +51 987 654 321</p>
+                <p class="contact-item"><i class="fas fa-clock"></i> Lun a Dom: 12:00 PM - 10:30 PM</p>
+                <a href="https://wa.me/51987654321?text=Hola,%20quisiera%20hacer%20un%20pedido" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> Pedir Atención por WhatsApp
+                </a>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.349635032514!2d-76.38888!3d-13.07694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA0JzM3LjAiUyA3NsKwMjMnMTkuOSJX!5e0!3m2!1ses!2spe!4v1600000000000!5m2!1ses!2spe" width="100%" height="320" style="border:0; border-radius:15px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL CARRITO DRAWER -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-bag"></i> Tu Pedido Chifa</h3>
+                <span class="close-btn" id="closeCart">&times;</span>
+            </div>
+            <div id="cartItems" class="cart-items-container"></div>
+            <div class="cart-footer">
+                <div class="cart-total-row">
+                    <span>Total a Pagar:</span>
+                    <strong>S/ <span id="cartTotal">0.00</span></strong>
+                </div>
+                <button id="checkoutBtn" class="btn-primary btn-full"><i class="fab fa-whatsapp"></i> Enviar Pedido a WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/reservation.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
